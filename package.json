@@ -1,0 +1,20 @@
+{
+  "name": "search-console-indexing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Google Search Console automation: sitemap scan, URL Inspection, quota-aware Indexing API submission, and evidence-based diagnosis of pages that won't index.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "scan": "node src/gsc-indexing.js --scan",
+    "scan:full": "node src/gsc-indexing.js --scan-full",
+    "submit": "node src/gsc-indexing.js",
+    "submit:dry": "node src/gsc-indexing.js --dry-run",
+    "recheck": "node src/gsc-indexing.js --recheck",
+    "status": "node src/gsc-indexing.js --status"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fast-xml-parser": "^4.5.0",
+    "google-auth-library": "^9.15.0"
+  }
+}

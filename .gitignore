@@ -1,0 +1,10 @@
+node_modules/
+.env
+service-account*.json
+*credentials*.json
+.indexing-state.json
+.monitor-state.json
+gsc-not-indexed.csv
+.env.*
+!.env.example
+.DS_Store
